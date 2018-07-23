@@ -1,7 +1,8 @@
-/**
- * Copyright (c) 2015-present, Alibaba Group Holding Limited.
- * All rights reserved.
- */
-'use strict';
+function warn() {
+  console.log('`react-web-cli` is deprecated, use `create-react-app` and `react-app-rewired` instead.');
+}
 
-module.exports = require('./local-cli/cli.js');
+module.exports = {
+  run: warn,
+  init: warn,
+};
